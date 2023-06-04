@@ -1,0 +1,772 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@import url('https://fonts.cdnfonts.com/css/happy-groovy');
+
+body {
+
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+                                                
+    
+}
+
+
+
+
+
+
+/* NAVBAR */
+
+
+header {
+	background-color: transparent;
+	
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  
+}
+
+.logo img {
+	height:70px;
+	
+}
+
+.menu {
+	list-style: none;
+	display: flex;
+}
+
+.menu li {
+	margin: 0 10px;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	transition: ali 0.3s ease-in-out;
+  font-size: 20px;
+}
+
+.menu li a:hover {
+	color: red
+}
+
+
+
+
+
+/* MAIN */
+
+ .area-1,.container, .sobre-mim{
+  visibility: hidden;
+} 
+
+
+.test {
+  margin-left: 7%;
+}
+
+main {
+  
+  
+  display: flex;
+  height: 100vh;
+}
+
+.foto img {
+  height:70%;
+  margin-top: 50px;
+}
+
+
+
+.nome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nome h1{
+  font-family: 'Happy Groovy', sans-serif;
+                                                
+  color:red;
+  font-size: 4em;
+}
+
+.nome p{
+  
+  font-size: 25px;
+}
+
+.l-g {
+  display: flex;
+  margin-top: 10px;
+  font-size: 35px;
+}
+
+
+
+/* Sobre mim */
+
+
+.sobre-mim {
+  display: flex;
+  height: 100vh;
+  margin: 5px;
+  
+}
+
+.conteudo-sobre {
+  margin-top: 30px;
+  font-size: 1em;
+  margin-left: 10%;
+}
+
+.conteudo-sobre h1{
+                                                                      font-family: 'Happy Groovy', sans-serif;
+                                                
+  color: red;
+  margin: 20px;
+  font-size: 70px;
+}
+
+.conteudo-sobre p{
+ display: flex;
+ font-size: 20px;
+ margin: 20px;
+}
+
+.habilidade {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  color: red;
+  font-size: 20px;
+  margin-right: 40%;
+}
+
+span {
+  color: red;
+}
+
+.foto-2 img{
+  margin-top: 100px;
+  height: 65%;
+}
+
+/* galeria */
+.container {
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.title {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.description {
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+}
+
+.image-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.image {
+	width: 30%;
+	margin: 1rem;
+	max-width: 300px;
+	height: auto;
+}
+
+
+div .image-wrapper img{
+  transition: transform 0.5s ease;
+}
+
+div .image-wrapper img:hover {
+  transform: scale(1.2);
+}
+
+
+/* galeria */
+
+
+
+
+
+
+  @media (min-width: 768px) {
+/* parte - 1 */
+.logo img {
+  height:2em;
+  
+}
+
+main {
+  display: flex;
+  height: 100vh;
+}
+
+.foto img {
+  height:5em;
+  
+}
+
+
+
+.nome {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.nome h1{
+  color: red;
+  font-size: 3em;
+  margin-top: 0em;
+}
+
+.nome p{
+  font-size: 1em;
+}
+
+.l-g {
+  display: flex;
+  margin-top: 1em;
+  font-size: 25px;
+  
+}
+/* parte - 1 */
+
+ /* parte - 2 */
+ .sobre-mim {
+  display: flex;
+  height: 100vh;
+  margin: 1px;
+}
+
+.conteudo-sobre {
+  margin-top: 1em;
+  font-size: 10px;
+  margin-left: 10%;
+}
+
+.conteudo-sobre h1{
+  color: red;
+  margin: 0px;
+  font-size: 3em;
+}
+
+.conteudo-sobre p{
+  display: flex;
+ font-size: 15px;
+ margin: 2em;
+}
+
+.habilidade {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  color: red;
+  font-size: 15px;
+  margin-right: auto;
+}
+
+span {
+  color: red;
+}
+
+.foto-2 img{
+  height:5em;
+  margin-top: 7em;
+}
+/* parte - 2 */
+
+
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+    
+
+    /* parte - 1 */
+  .logo img {
+    height:1em;
+    
+  }
+
+  main .area-1{
+    
+    height: 100vh;
+    
+  }
+
+  .foto {
+    background-color: aqua;
+    
+  }
+  
+  
+  .foto img {background-color: antiquewhite;
+    display: none;
+  }
+  
+  
+  
+  .nome {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .nome h1{
+    color: red;
+    font-size: 3em;
+    margin-top: 0em;
+  }
+  
+  .nome p{
+    font-size: 1em;
+  }
+  
+  .l-g {
+    display: flex;
+    margin-top: 1em;
+    font-size: 25px;
+    
+  }
+
+  
+
+
+  /* parte - 1 */
+
+   /* parte - 2 */
+   .sobre-mim {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 1px;
+  }
+  
+  .conteudo-sobre {
+    margin-top: 20%;
+    font-size: 10px;
+    margin-left: 10%;
+  }
+  
+  .conteudo-sobre h1{
+    color: red;
+    margin: 0px;
+    font-size: 250%;
+  }
+  
+  .conteudo-sobre p{
+    display: flex;
+   font-size: 150%;
+   margin: 2em;
+  }
+  
+  .habilidade {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    color: red;
+    font-size: 150%;
+    margin-right: auto;
+  }
+  
+  span {
+    color: red;
+  }
+  
+  .foto-2 img{
+    height:5em;
+    margin-top: 20px;
+    
+  }
+
+  .foto-2{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  /* parte - 2 */
+
+  
+
+
+  }
+  
+
+
+ 
+
+@media screen and (min-width: 768px) {
+  
+
+  /* parte - 1 */
+  .logo img {
+    height:2em;
+    
+  }
+
+  main {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .foto img {
+    height:15em;
+    margin-top: 10em;
+  }
+  
+  
+  
+  .nome {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .nome h1{
+    color: red;
+    font-size: 3em;
+    margin-top: 0em;
+  }
+  
+  .nome p{
+    font-size: 1em;
+  }
+  
+  .l-g {
+    display: flex;
+    margin-top: 1em;
+    font-size: 25px;
+    
+  }
+  /* parte - 1 */
+
+
+
+  /* parte - 2 */
+  .sobre-mim {
+    display: flex;
+    height: 100vh;
+    margin: 5px;
+  }
+  
+  .conteudo-sobre {
+    margin-top: 1em;
+    font-size: 1em;
+    margin-left: 10%;
+  }
+  
+  .conteudo-sobre h1{
+    color: red;
+    margin: 20px;
+    font-size: 2em;
+  }
+  
+  .conteudo-sobre p{
+    display: flex;
+   font-size: 1em;
+   margin: 2em;
+  }
+  
+  .habilidade {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    color: red;
+    font-size: 1em;
+    margin-right: auto;
+  }
+  
+  span {
+    color: red;
+  }
+  
+  .foto-2 img{
+    height:12em;
+    margin-top: 10em;
+  }
+  /* parte - 2 */
+
+
+
+  
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 1023px) {
+  
+   /* parte - 1 */
+   .logo img {
+    height:3em;
+    
+  }
+
+  main {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .foto img {
+    height:300px;
+    margin-top: 8em;
+  }
+  
+  
+  
+  .nome {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .nome h1{
+    color: red;
+    font-size: 3em;
+    margin-top: 0em;
+  }
+  
+  .nome p{
+    font-size: 1em;
+  }
+  
+  .l-g {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 75%;
+    margin-top: 1em;
+    font-size: 20px;
+    
+  }
+  /* parte - 1 */
+
+
+   /* parte - 2 */
+   .sobre-mim {
+    display: flex;
+    height: 100vh;
+    margin: 5px;
+  }
+  
+  .conteudo-sobre {
+    margin-top: 1em;
+    font-size: 1em;
+    margin-left: 10%;
+  }
+  
+  .conteudo-sobre h1{
+    color: red;
+    margin: 20px;
+    font-size: 3em;
+  }
+  
+  .conteudo-sobre p{
+    display: flex;
+   font-size: 1em;
+   margin: 2em;
+  }
+  
+  .habilidade {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    color: red;
+    font-size: 1em;
+    margin-right: auto;
+  }
+  
+  span {
+    color: red;
+  }
+  
+  .foto-2 img{
+    margin-top: 1em;
+    height: 200px;
+  }
+  /* parte - 2 */
+
+
+   
+}
+  
+
+@media screen and (min-width: 1024px) {
+
+  /* parte - 1 */
+  .logo img {
+    height:2em;
+    
+  }
+
+  main {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .foto img {
+    height:300px;
+    margin-top: 8em;
+  }
+  
+  
+  
+  .nome {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .nome h1{
+    color: red;
+    font-size: 55px;
+    margin-top: 0em;
+  }
+  
+  .nome p{
+    font-size: 17px;
+  }
+  
+  .l-g {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 75%;
+    margin-top: 1em;
+    font-size: 30px;
+    
+  }
+  /* parte - 1 */
+
+
+   /* parte - 2 */
+   .sobre-mim {
+    display: flex;
+    height: 100vh;
+    margin: 5px;
+  }
+  
+  .conteudo-sobre {
+    margin-top: 1em;
+    font-size: 1em;
+    margin-left: 10%;
+  }
+  
+  .conteudo-sobre h1{
+    color: red;
+    margin: 20px;
+    font-size: 3em;
+  }
+  
+  .conteudo-sobre p{
+    display: flex;
+   font-size: 17px;
+   margin: 1em;
+  }
+  
+  .habilidade {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    color: red;
+    font-size: 15px;
+    margin-right: auto;
+  }
+  
+  span {
+    color: red;
+  }
+  
+  .foto-2 img{
+    margin-top: 100px;
+    height: 300px;
+  }
+  /* parte - 2 */
+
+
+  
+}
+
+@media (min-width: 640px){
+
+}
+
+
+@media (min-width: 640px) {
+  body {
+    max-width: 640px
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  body{
+    max-width: 768px
+  }
+}
+
+  
+
+
+@media (min-width: 1024px) {
+  
+  body {
+    max-width: 1024px
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    max-width: 1280px
+  }
+}
+
+
+
+@media (min-width: 1536px) {
+  body{
+    max-width: 1536px
+  }
+}
